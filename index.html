@@ -1,0 +1,1102 @@
+<html>
+    <head>
+        <title>
+            showball
+        </title>
+    </head>
+    <body bgcolor="black">
+        
+        
+        
+        <style>
+            #p{
+                position: absolute;
+                top:300px;
+                left:200px ;
+            }
+            
+            #btnJogar{
+                position: absolute;
+                top:450px;
+                left: 10px;
+                height: 150px;
+                width: 150px;
+                border-width: 2px;
+                border: 2px solid;
+            }
+            
+
+            #b1{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: red;
+                position: absolute;
+                left: 470px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20px;
+                
+            }
+             #b2{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: red;
+                position: absolute;
+                left: 540px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20pt;
+            }
+             #b3{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: yellow;
+                position: absolute;
+                left: 570px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20px;
+                
+            }
+            
+            #b4{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: green;
+                position: absolute;
+                left: 600px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20px;
+            }
+            
+            #b5{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                left: 630px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20px;
+                
+            }
+            
+            
+            #b6{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                left: 660px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20px;
+                
+            }
+                        
+            #b7{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid white ;
+                background-color: blue;
+                position: absolute;
+                left: 690px;
+                top:330px;
+                padding-top: 10px;
+                padding-left: 10px;
+                font-style: bold;
+                visibility: hidden;
+                font-size: 20px;
+                
+            }
+            
+            
+            
+        </style>
+        
+        
+        <style>
+            #logo{
+               /* position: absolute;
+                top:10px;*/
+            }
+        </style>
+        <img src="image/logo.png">
+        
+        
+        <a href="index.html"><h1>restart</1h></a>
+        
+            <img onload="
+        
+            gerarNumeros1(),
+            gerarNumeros2()" id="p"src="image/p.png">
+            
+            <div id="b1">
+                
+            </div>
+            
+            <div id="b2">
+                
+            </div>
+            
+            <div id="b3">
+                
+            </div>
+            
+            <div id="b4">
+                
+            </div>
+            
+            <div id="b5">
+                
+            </div>
+            
+            <div id="b6">
+                
+            </div>
+            
+            <div id="b7">
+                
+            </div>
+            
+            
+            <style>
+                #c1{
+                    position: absolute;
+                    top: 800px;
+                    left: 200px;
+                    color: black;
+                    width: 110px;
+                    height: 100px;
+                    /*background-color: white*/;
+                    border-top: 25px solid green;
+                 /*   padding-left: 20px;*/
+                    
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+
+                }
+                #c2{
+                    position: absolute;
+                    top: 800px;
+                    left: 600px;
+                    color: black;
+                    width: 110px;
+                    height: 100px;
+                    /*background-color: white;*/
+                    border-top: 25px solid green;
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+
+                }
+                #c3{
+                    position: absolute;
+                    top: 1000px;
+                    left: 200px;
+                    color: black;
+                    width: 110px;
+                    height: 100px;
+                   /* background-color: white;*/
+                    border-top: 25px solid green;
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+
+                }
+                 #c4{
+                    position: absolute;
+                    top: 1000px;
+                    left: 600px;
+                    color: black;
+                    width: 110px;
+                    height: 100px;
+                   /* background-color: white;*/
+                    border-top: 25px solid green;
+                
+               /* background: url('image/cartela1.png')no-repeat left;*/
+                 
+                /* width: 500px;
+                 height: 500px;*/
+
+                }
+            </style>
+            
+            <div id="c1">
+               <!-- <img src="image/cartela1.png" width="200px"
+                height="100px">-->
+                
+                <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>
+            </div>
+           
+           
+             <div id="c2">
+                <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>
+             </div>
+            
+            <div id="c3">
+            <!-- <table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>-->
+            </div>
+            
+            <div id="c4">
+                                <!--<table
+                cellspacing="0px"
+                bgcolor="white"
+                border="1px solid black"
+                >
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </table>-->
+            </div>
+                
+            
+            <button id="btnJogar" onclick="iniciar()"> jogar</button>
+            
+            <script>
+            
+            var x= 470;
+            var y = 330
+            var n1 = Math.floor(Math.random()*100);
+            n1=n1+1;
+            var n2 = Math.floor(Math.random()*100);
+            n2=n2+1;
+            var n3 = Math.floor(Math.random()*100);
+            n3=n3+1;
+           var n4 = Math.floor(Math.random()*100);
+            n4=n4+1;
+            var n6 = Math.floor(Math.random()*100);
+            n6=n6+1;
+
+            var n5 = Math.floor(Math.random()*100);
+            n5=n5+1;
+            
+            var n7 = Math.floor(Math.random()*100);
+            n7=n7+1;
+            
+            var r= 10;
+            var r2=10;
+            
+            var aux1 = false;
+            var aux2 = false;
+            var aux3 = false;
+            var aux4 = false;
+            var aux5 = false;
+            var aux6 = false;
+            var aux7 = false;
+            
+            var num1 = new Array(100);
+            var num2 = new Array(100);
+            var num3 = new Array(100);
+            var num4 = new Array(100);
+           //c1[0] = 19;
+           //alert(c1[0]);
+          // var num1 = 3
+          
+          
+           
+           
+           
+         //  var cartela1 = document.getElementById('c1');
+           
+       //document.getElementById('c1').innerHTML = num1;
+           
+        //  b1.innerHTML = n1;
+           
+           function gerarNumeros1(){
+               
+               for(i=1;i<=15;i++){
+                   num1[i]=Math.floor(Math.random()*100);
+                   num1[i]= num1[i]+1;
+                   
+                   
+                  document.querySelectorAll('td')[0].innerHTML=num1[1];
+                document.querySelectorAll('td')[1].innerHTML=num1[2];
+                 document.querySelectorAll('td')[2].innerHTML=num1[3];
+                document.querySelectorAll('td')[3].innerHTML=num1[4];
+                 document.querySelectorAll('td')[4].innerHTML=num1[5];
+                 document.querySelectorAll('td')[5].innerHTML=num1[6];
+                document.querySelectorAll('td')[6].innerHTML=num1[7];
+                 document.querySelectorAll('td')[7].innerHTML=num1[8];
+                 document.querySelectorAll('td')[8].innerHTML=num1[9];
+                 document.querySelectorAll('td')[9].innerHTML=num1[10];
+                 document.querySelectorAll('td')[10].innerHTML=num1[11];
+                 document.querySelectorAll('td')[11].innerHTML=num1[12];
+                 document.querySelectorAll('td')[12].innerHTML=num1[13];
+                 document.querySelectorAll('td')[13].innerHTML=num1[14];
+                 document.querySelectorAll('td')[14].innerHTML=num1[15];
+                 
+                 
+
+              }
+              
+            
+           }
+            function gerarNumeros2(){
+               
+               for(i=1;i<=15;i++){
+                   num2[i]=Math.floor(Math.random()*100);
+                   num2[i]= num2[i]+1;
+                 
+                 
+                document.querySelectorAll('td')[15].innerHTML=num2[1];
+               document.querySelectorAll('td')[16].innerHTML=num2[2];
+               document.querySelectorAll('td')[17].innerHTML=num2[3];
+              document.querySelectorAll('td')[18].innerHTML=num2[4];
+
+             document.querySelectorAll('td')[19].innerHTML=num2[5];
+                document.querySelectorAll('td')[20].innerHTML=num2[6];
+                document.querySelectorAll('td')[21].innerHTML=num2[7];
+                document.querySelectorAll('td')[22].innerHTML=num2[8];
+                 document.querySelectorAll('td')[23].innerHTML=num2[9];
+                 document.querySelectorAll('td')[24].innerHTML=num2[10];
+                 document.querySelectorAll('td')[25].innerHTML=num2[11];
+                 document.querySelectorAll('td')[26].innerHTML=num2[12];
+                 document.querySelectorAll('td')[27].innerHTML=num2[13];
+                 document.querySelectorAll('td')[28].innerHTML=num2[14];
+                 document.querySelectorAll('td')[29].innerHTML=num2[15];
+                 
+              }
+            
+            
+           }
+           
+         /*  function gerarNumeros3(){
+               
+               for(i=1;i<=15;i++){
+                   num3[i]=+Math.floor(Math.random()*100);
+                   num3[i]= num3[i]+1;
+                 // console.log(num2[i]);
+                 // document.querySelectorAll('td')[30].innerHTML=num3[1];
+                 
+                   
+              }
+            
+
+           }
+           
+           function gerarNumeros4(){
+               
+               for(i=1;i<=15;i++){
+                   num4[i]=+Math.floor(Math.random()*100);
+                   num4[i]= num4[i];
+                 // console.log(num2[i]);
+                 // document.getElementById('c4').innerHTML= num3;
+                 
+                   
+              }
+            
+
+           }*/
+          
+            
+          
+            
+          
+            
+            
+          /*  function mudarCor1(){
+                
+               var cor1= Math.floor(Math.random()*6);
+            cor1=cor1+1;
+            
+            if(cor1===1){
+                document.getElementById('b1').style.backgroundColor='blue';
+            }
+            if(cor1===2){
+                                document.getElementById('b1').style.backgroundColor='red';
+            }
+            if(cor1===3){
+                document.getElementById('b1').style.backgroundColor='yellow';
+            }
+            if(cor1===4){
+                document.getElementById(b1).style.backgroundColor='gray';
+            }
+                if(cor1===5){
+                    document.getElementById('b1').style.backgroundColor='white';
+                }
+            
+            else{
+                                document.getElementById('b1').style.backgroundColor='green';
+            }
+        
+            
+            }
+            
+            
+            
+            function mudarCor2(){
+                
+               var cor2= Math.floor(Math.random()*6);
+            cor2=cor2+1;
+            
+            if(cor2===1){
+                document.getElementById('b2').style.backgroundColor='blue';
+            }
+            if(cor2===2){
+                                document.getElementById('b2').style.backgroundColor='red';
+            }
+            if(cor2===3){
+                document.getElementById('b2').style.backgroundColor='yellow';
+            }
+            
+           if(cor2===4){
+                document.getElementById('b2').style.backgroundColor='gray';
+            }
+            if(cor2===5){
+                document.getElementById('b2').style.backgroundColor='white';
+            
+            }else{
+                                document.getElementById('b2').style.backgroundColor='green';
+            }
+        
+            
+            }
+            
+            
+            function mudarCor3(){
+                
+               var c1= Math.floor(Math.random()*3);
+            c1=c1+1;
+            
+            if(c1===1){
+                document.getElementById('b3').style.backgroundColor='blue';
+            }
+            if(c1===2){
+                                document.getElementById('b3').style.backgroundColor='rd';
+            }
+            if(c1===3){
+                document.getElementById('b3').style.backgroundColor='yellow';
+            }else{
+                                document.getElementById('b3').style.backgroundColor='green';
+            }
+        
+            
+            }
+            }
+            
+            function mudarCor4(){
+                
+               var c1= Math.floor(Math.random()*3);
+            c1=c1+1;
+            
+            if(c1===1){
+                document.getElementById('b4').style.backgroundColor='blue';
+            }
+            if(c1===2){
+                                document.getElementById('b4').style.backgroundColor='red';
+            }
+            if(c1===3){
+                document.getElementById('b4').style.backgroundColor='yellow';
+            }else{
+                                document.getElementById('b4').style.backgroundColor='green';
+            }
+        
+            
+            }
+            
+            function mudarCor5(){
+                
+               var c1= Math.floor(Math.random()*3);
+            c1=c1+1;
+            
+            if(c1===1){
+                document.getElementById('b5').style.backgroundColor='blue';
+            }
+            if(c1===2){
+                                document.getElementById('b5').style.backgroundColor='red';
+            }
+            if(c1===3){
+                document.getElementById('b5').style.backgroundColor='yellow';
+            }else{
+                                document.getElementById('b5').style.backgroundColor='green';
+            }
+        
+            
+            }
+            
+
+            
+            
+            function mudarCor6(){
+                
+               var c1= Math.floor(Math.random()*3);
+            c1=c1+1;
+            
+            if(c1===1){
+                document.getElementById('b6').style.backgroundColor='blue';
+            }
+            if(c1===2){
+                                document.getElementById('b6').style.backgroundColor='red';
+            }
+            if(c1===3){
+                document.getElementById('b1').style.backgroundColor='yellow';
+            }else{
+                                document.getElementById('b6').style.backgroundColor='green';
+            }
+        
+            
+            }
+            
+            function mudarCor7(){
+                
+               var c7= Math.floor(Math.random()*3);
+            c7=c7+1;
+            
+            if(c7===1){
+                document.getElementById('b7').style.backgroundColor='blue';
+            }
+            if(c7===2){
+                                document.getElementById('b7').style.backgroundColor='red';
+            }
+            if(c7===3){
+                document.getElementById('b1').style.backgroundColor='yellow';
+            }else{
+                                document.getElementById('b7').style.backgroundColor='green';
+            }
+        
+            }*/
+            
+
+            
+                //mover bola1
+                function start(){
+                    
+                
+                r=r-10;
+                
+
+                                            var b1 =   document.getElementById('b1');
+                
+                    var b2 =document.getElementById('b2');
+                
+                
+                    var b3 = document.getElementById('b3');
+                
+                    var b4 = document.getElementById('b4');
+                    
+                    var b5 = document.getElementById('b5');
+                                  
+                    var b6 = document.getElementById('b6');
+                    
+                    var b7 = document.getElementById('b7');
+                
+                    b1.style.visibility = "visible"
+                    
+                     if(x>330 && aux1===false){     
+                    
+                    
+                    
+        
+                         x=x-10;
+                         
+                    b1.innerHTML = n1;
+                    
+                    //n1.par
+                    
+                 
+                
+                
+                   b1.style.left=x+"px";
+                   
+                                                   //   b1.style.transform="rotate"+'('+r+'deg'+')';
+                    
+                    
+                      
+                } 
+                else if(x<331 && y<700){
+                     
+                    aux1=true;
+                    y= y+10;
+                    
+                  b1.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b1.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   //console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<640 && aux1===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b1.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b1.style.left=x+"px";
+                    b1.style.transform="rotate(0deg)"
+                  //  console.log('teste');
+                }
+                    
+                }
+                
+                
+                 //mover bola2
+                 function start2(){
+                b2.style.visibility = "visible"
+                  if(x>330 && aux2===false){     
+                   b2.innerHTML = n2;
+                                    //   b2.style.backgroundColor='#;
+                    
+                         x=x-10;
+                         
+                                  // b2.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b2.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<700){
+                     
+                    aux2=true;
+                    y= y+10;
+                    
+                  b2.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b2.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<610 && aux2===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b2.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b2.style.left=x+"px";
+                  //  console.log('teste');
+                  b2.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+                 
+                                  //mover bola3
+                 function start3(){
+                                         b3.style.visibility = "visible"
+                  if(x>330 && aux3===false){     
+                   b3.innerHTML = n3;
+                         x=x-10;
+                         
+                                b3.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b3.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<700){
+                     
+                    aux3=true;
+                    y= y+10;
+                    
+                  b3.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b3.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<570 && aux3===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b3.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b3.style.left=x+"px";
+                  //  console.log('teste');
+                  b3.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+                 
+                 
+                    //mover bola4
+                 function start4(){
+                                         b4.style.visibility = "visible"
+                  if(x>330 && aux4===false){     
+                   b4.innerHTML = n4;
+                         x=x-10;
+                         
+                                b4.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b4.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<700){
+                     
+                    aux4=true;
+                    y= y+10;
+                    
+                  b4.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b4.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<530 && aux4===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b4.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b4.style.left=x+"px";
+                  //  console.log('teste');
+                  b4.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+                 
+                                     //mover bola5
+                 function start5(){
+                                         b5.style.visibility = "visible"
+                  if(x>330 && aux5===false){     
+                   b5.innerHTML = n5;
+                         x=x-10;
+                         
+                                b5.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b5.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<700){
+                     
+                    aux5=true;
+                    y= y+10;
+                    
+                  b5.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b5.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<500 && aux5===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b5.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b5.style.left=x+"px";
+                  //  console.log('teste');
+                  b5.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+                 
+                                                      //mover bola6
+                 function start6(){
+                                         b6.style.visibility = "visible"
+                  if(x>330 && aux6===false){     
+                   b6.innerHTML = n6;
+                         x=x-10;
+                         
+                                b6.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b6.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<700){
+                     
+                    aux6=true;
+                    y= y+10;
+                    
+                  b6.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b6.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<470 && aux6===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b6.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b6.style.left=x+"px";
+                  //  console.log('teste');
+                  b6.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            // mover bola7
+                function start7(){
+                     
+                
+                                         
+                                         b7.style.visibility = "visible"
+                                         
+                    b7.innerHTML= n7;
+                                         
+                  if(x>330 && aux7===false){     
+                  
+                         
+                                b7.style.transform="rotate"+'('+r+'deg'+')';
+                  //  console.log(b2.style.left);
+                   b7.style.left=x+"px";
+                    
+                    
+                      
+                } 
+                else if(y<700){
+                     
+                    aux7=true;
+                    y= y+10;
+                    
+                  b7.style.transform="rotate"+'('+r+'deg'+')';
+                
+                    b7.style.top=y+"px";
+                    
+                   // console.log('y= '+y);
+                   // console.log('x= '+x);
+ 
+                 //   console.log(c[1]);
+                
+                
+                } else if(y<=700 && x<440 && aux7===true ){
+                    x=x+10;
+                    
+                   r2=r2+10;
+                   
+                    
+                                    b7.style.transform="rotate"+'('+r2+'deg'+')';
+                
+                    b7.style.left=x+"px";
+                  //  console.log('teste');
+                  b7.style.transform="rotate(0deg)"
+                }
+                    
+                
+                 }
+            
+            
+            
+            
+            
+            
+            
+            
+                
+              function iniciar(){
+                 var move = setInterval(start,100);
+                var move2=setInterval(start2,200);
+                var move3 = setInterval(start3,300);
+                var move4 = setInterval(start4,400);
+                var move5 = setInterval(start5,500);
+                var move6 = setInterval(start6,600);
+                var move7 = setInterval
+                    (start7,700);
+                 
+                 
+                }
+            </script>
+        
+    </body>
+</html>
