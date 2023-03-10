@@ -362,7 +362,7 @@
               </div>
 
             
-            <button id="btnJogar" onclick="iniciar()"> jogar</button>
+            <img id="btnJogar" src="image/play2.png" width="185px" height="200px" onclick="iniciar()">
             
             <script>
             
@@ -878,6 +878,9 @@
             
                 
               function iniciar(){
+
+                 document.getElementById('btnJogar').style.visibility= 'hidden';
+                  
                  var move = setInterval(start,10);
                 var move2=setInterval(start2,20);
                 var move3 = setInterval(start3,30);
